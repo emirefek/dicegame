@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+hr {
+    border-width: 0;
+    height: 50px;
+}
+
+li {
+    list-style-type: none;
+}
+
+:root {
+    --color-bg: hsl(34, 30%, 71%);
+    --color-header: hsl(283, 40%, 51%);
+
+    --color-dice1: hsl(0, 66%, 25%);
+    --color-dice2: hsl(246, 66%, 25%);
+
+    --font1: 'Kdam Thmor Pro', sans-serif;
+}
+
+body {
+    background-color: var(--color-bg);
+    font-family: var(--font1);
+    font-size: 40px;
+    height: 100vh;
+}
+
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: var(--color-header);
+    font-size: 2em;
+}
+
+.scoreboard {
+    padding: 40px;
+    text-align: center;
+}
+
+.dices {
+    padding: 40px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2em;
+}
+
+.dice-red {
+    width: 200px;
+    height: 200px;
+    background-color: var(--color-dice1);
+
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px 10px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dice-red>div {
+    flex-basis: calc(30%);
+    display: inline;
+}
+
+.dice-blue {
+    width: 200px;
+    height: 200px;
+    background-color: var(--color-dice2);
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px 10px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dice-blue>div {
+    flex-basis: calc(30%);
+    display: inline;
+}
+
+.throwbtn {
+    display: inline-block;
+
+    border: solid var(--color-header) 5px;
+    color: var(--color-header);
+
+    margin: 40px;
+    padding: 15px;
+    border-radius: 15px;
+
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.throwbtn:hover {
+    background-color: white;
+}
